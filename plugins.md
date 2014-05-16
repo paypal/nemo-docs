@@ -23,19 +23,11 @@ var Nemo = require('nemo'),
 			},
 			"view": {
 				"module": "nemo-view"
-			},
-			"user": {
-				"module": "nemo-jaws/plugins/user"
 			}
 		}
 	},
 	setup = {
-		"view": ["login", "profile"],
-		"user": {
-			"simple": {
-				"country": "US"
-			}
-		}
+		"view": ["login", "profile"]
 	};
 
 (new Nemo(plugins)).setup(setup).then(function(_nemo) {
@@ -44,9 +36,6 @@ var Nemo = require('nemo'),
 
 	//nemo.view.login and nemo.view.profile access those view objects which were generated
 	//from corresponding locator/profile.json and locator/login.json files
-
-	//nemo.user.client (accesses the RESTful endpoints for creating/modifying accounts directly)
-	//nemo.user.users.simple (has a JSON representation of the user created during the Nemo setup routine)
 
 	//proceed with automation
 });

@@ -4,11 +4,11 @@ Put Nemo MVP out in the world, with enough docs, examples, modules to allow peop
 
 ## Packages and versions
 
-* [nemo](https://github.com/paypal/nemo/tree/v0.6-beta): v0.6-beta
-* [nemo-view](https://github.com/paypal/nemo-view/tree/v0.3-beta): v0.3-beta
-* [nemo-mocha-factory](https://github.com/paypal/nemo-mocha-factory/tree/v0.3-beta): v0.3-beta
-* [nemo-drivex](https://github.com/paypal/nemo-drivex/tree/master): v0.1.x
-* [nemo-locatex](https://github.com/paypal/nemo-locatex/tree/v0.3-beta): v0.3-beta
+* [nemo](https://github.com/paypal/nemo)
+* [nemo-view](https://github.com/paypal/nemo-view)
+* [nemo-mocha-factory](https://github.com/paypal/nemo-mocha-factory)
+* [nemo-drivex](https://github.com/paypal/nemo-drivex/tree/master)
+* [nemo-locatex](https://github.com/paypal/nemo-locatex)
 
 ## Example application
 
@@ -16,7 +16,7 @@ Put Nemo MVP out in the world, with enough docs, examples, modules to allow peop
 
 ## Documentation
 
-* This repo's md docs. [Start here](https://github.paypal.com/medelman/nemo-docs/blob/master/README.md)
+* This repo's md docs. [Start here](https://github.com/paypal/nemo-docs/blob/master/README.md)
 
 ## Tickets or other approvals
 

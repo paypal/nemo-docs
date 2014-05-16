@@ -8,19 +8,19 @@ Get a grounding in the [Nemo Philosophy](thinking-in-nemo.md)
 
 The following modules are essential for getting started with Nemo
 
-### [nemo](https://github.com/paypal/nemo/tree/v0.6-beta)
+### [nemo](https://github.com/paypal/nemo)
 
 Nemo lovingly hugs selenium-webdriver, bundles up the plugins of your choice, and gives it all back to you in a single namespace for your testing pleasure.
 
-### [nemo-view](https://github.com/paypal/nemo-view/tree/v0.3-beta)
+### [nemo-view](https://github.com/paypal/nemo-view)
 
 Nemo view replaces nemo's built-in "view" functionality with a much cooler interface. Use it in concert with nemo-drivex and nemo-locatex.
 
-### [nemo-locatex](https://github.com/paypal/nemo-locatex/tree/v0.3-beta)
+### [nemo-locatex](https://github.com/paypal/nemo-locatex)
 
 Essentially a middleware that allows you to have locale-specific locators in your JSON locator files.
 
-### [nemo-drivex](https://github.com/paypal/nemo-drivex/tree/master)
+### [nemo-drivex](https://github.com/paypal/nemo-drivex)
 
 Sugary methods layered over locators that make selenium easy.
 
