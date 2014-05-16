@@ -4,15 +4,15 @@ Put Nemo MVP out in the world, with enough docs, examples, modules to allow peop
 
 ## Packages and versions
 
-* [nemo](https://github.paypal.com/NodeTestTools/nemo/tree/v0.6-beta): v0.6-beta
-* [nemo-view](https://github.paypal.com/NodeTestTools/nemo-view/tree/v0.3-beta): v0.3-beta
-* [nemo-mocha-factory](https://github.paypal.com/NodeTestTools/nemo-mocha-factory/tree/v0.3-beta): v0.3-beta
-* [nemo-drivex](https://github.paypal.com/NodeTestTools/nemo-drivex/tree/master): v0.1.x
-* [nemo-locatex](https://github.paypal.com/NodeTestTools/nemo-locatex/tree/v0.3-beta): v0.3-beta
+* [nemo](https://github.com/paypal/nemo/tree/v0.6-beta): v0.6-beta
+* [nemo-view](https://github.com/paypal/nemo-view/tree/v0.3-beta): v0.3-beta
+* [nemo-mocha-factory](https://github.com/paypal/nemo-mocha-factory/tree/v0.3-beta): v0.3-beta
+* [nemo-drivex](https://github.com/paypal/nemo-drivex/tree/master): v0.1.x
+* [nemo-locatex](https://github.com/paypal/nemo-locatex/tree/v0.3-beta): v0.3-beta
 
 ## Example application
 
-* [nemo-example-app](https://github.paypal.com/NodeTestTools/nemo-example-app)
+* [nemo-example-app](https://github.com/paypal/nemo-example-app)
 
 ## Documentation
 

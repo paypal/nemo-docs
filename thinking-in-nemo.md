@@ -78,7 +78,7 @@ test syntax.
 
 Read about [locator files](locators.md) here.
 
-Read about the recommended [nemo-view](https://github.paypal.com/NodeTestTools/nemo-view/tree/v0.3-beta) view interface here.
+Read about the recommended [nemo-view](https://github.com/paypal/nemo-view/tree/v0.3-beta) view interface here.
 
 ## Mixing view objects together
 

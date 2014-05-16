@@ -22,11 +22,11 @@ In package.json
   "grunt-loop-mocha": "^0.3.0",
   "nconf": "~0.6.7",
   "mocha": "^1.18.0",
-  "nemo": "git://github.paypal.com/NodeTestTools/nemo.git#v0.6-beta",
+  "nemo": "git://github.com/paypal/nemo.git#v0.6-beta",
   "nemo-drivex": "^0.1.0",
-  "nemo-view": "git://github.paypal.com/NodeTestTools/nemo-view.git#v0.3-beta",
+  "nemo-view": "git://github.com/paypal/nemo-view.git#v0.3-beta",
   "nemo-locatex": "^0.3.0-beta",
-  "nemo-mocha-factory": "git://github.paypal.com/NodeTestTools/nemo-mocha-factory.git#v0.3-beta"
+  "nemo-mocha-factory": "git://github.com/paypal/nemo-mocha-factory.git#v0.3-beta"
 ```
 
 ```bash
