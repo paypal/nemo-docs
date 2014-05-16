@@ -21,10 +21,15 @@ Put Nemo MVP out in the world, with enough docs, examples, modules to allow peop
 ## Tickets or other approvals
 
 * [Domain Registration](http://lob.corp.ebay.com/sites/legal/IntellectualProperty/Lists/Domain%20Name%20Registration%20Form/AllItems1.aspx): submitted 25 Apr 2014
+  * completed. nemojs.com is registered for use
 * [Trademark Request](http://lob.corp.ebay.com/sites/legal/IntellectualProperty/Lists/Trademark%20Candidate%20Questionnaire/My%20Trademark%20View.aspx): submitted 25 Apr 2014
+  * Legal review is complete and nemo and nemo* names are approved for use
 * Open source project license request: email sent to Mark.Yuan@ebay.com on 25 Apr 2014
+  * still outstanding
+* Website design/hosting
+  * not yet started. I don't believe this is a pre-requisite for going out the door
 
-## Additional contributions
+## Additional contributions (nice to have)
 
 ### Nemo generator
 
