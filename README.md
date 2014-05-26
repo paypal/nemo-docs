@@ -8,6 +8,9 @@ Get a grounding in the [Nemo Philosophy](thinking-in-nemo.md)
 
 The following modules are essential for getting started with Nemo
 
+### [generator-nemo](https://github.com/paypal/generator-nemo)
+To get everything off the ground quickly, start here, and with a kraken 1.0 application.
+
 ### [nemo](https://github.com/paypal/nemo)
 
 Nemo lovingly hugs selenium-webdriver, bundles up the plugins of your choice, and gives it all back to you in a single namespace for your testing pleasure.
