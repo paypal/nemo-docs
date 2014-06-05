@@ -47,3 +47,17 @@ the user plugin, which will have been registered by the presence of the "user" n
 
 A "view" plugin will override the default view behavior in Nemo. A good practice, as is found in nemo-view, is to expect a locator JSON file
 of the same name as the registered view object to be in the locator directory.
+
+## Authoring a plugin
+
+A plugin is a commonjs module which exports a 'setup' function with the following signature:
+(config, result, callback)
+
+config: is the setup configuration passed in during setup: `(new Nemo(plugins)).setup(config)`
+result: is the `nemo` namespace which will be returned at the end of the setup waterfall
+callback: is the callback provided by the async.waterfall control flow
+
+* plugin.setup ___MAY___ add a namespace to the `result` and if so it ___MUST___ match the `registerAs` value in package.json
+* plugin.setup ___MUST___ call the callback with the following args: ([null | Error], config, result)
+
+package.json ___MUST___ have a `registerAs` value. This will be read by the generator-nemo plugin subgenerator. It also is a good place to indicate to users what the plugin will add to the result/nemo namespace.
