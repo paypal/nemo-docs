@@ -12,12 +12,12 @@ provides via the setup method. By default, your `nemo` namespace will include:
 ```javascript
    {
    		"driver": selenium-webdriver API into a "hot" browser,
-   		"wd": selenium-webdriver "webdriver" namespace (includes locators etc),
+   		"wd": selenium-webdriver module (includes any namespace object exposed by importing selenium-webdriver),
    		"props": a JSON object which Nemo constructs from the nemoProps environment variable,
 		"view": an array of view objects,
 		"locator": an array of locator objects,
-		"<plugin1>": a user registered plugin,
-		"<pluginN>": a user registered plugin
+		"<plugin1>": a user registered plugin object,
+		"<pluginN>": a user registered plugin object
    }
 ```
 
