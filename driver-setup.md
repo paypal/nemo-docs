@@ -30,3 +30,5 @@ For Chrome, you will need the chromedriver binary, which is maintained by the Ch
 http://chromedriver.storage.googleapis.com/index.html
 
 Make sure the chromedriver binary is exposed via your PATH variable. Otherwise Selenium will not be able to locate it.
+
+For OS X, if you're using [Homebrew](http://brew.sh/), there's a [Homebrew formula](http://brewformulas.org/Chromedriver), which makes installation much easier.  To install, it's simply `brew install chromedriver`.
