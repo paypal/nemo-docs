@@ -1,5 +1,7 @@
 # Welcome to Nemo
 
+_This is the document set for nemo@v0.3.x and associated modules. For nemo@v0.2.x please [view the 0.2-release branch of this repository](https://github.com/paypal/nemo-docs/tree/0.2-release)._
+
 Nemo is a framework and set of conventions for automated testing of web and even native applications. How you use it is only limited by your imagination. A common starting point is to pair Nemo with a task runner (e.g. Grunt) and a test runner (e.g. Mocha). But if you have a different task and test runner, Nemo will work with that as well.
 
 Get a grounding in the [Nemo Philosophy](thinking-in-nemo.md)
@@ -34,4 +36,3 @@ Follow the README instructions to get the sample app installed and run Nemo test
 ## Install Nemo from scratch
 
 The best way to explore all the moving parts (in our opinion) is to get your hands dirty. [It won't take long, give it a shot](grunt-mocha.md).
-
