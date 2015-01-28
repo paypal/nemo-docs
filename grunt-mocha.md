@@ -22,11 +22,11 @@ In package.json
   "grunt-loop-mocha": "^0.3.0",
   "nconf": "~0.6.7",
   "mocha": "^1.18.0",
-  "nemo": "git://github.com/paypal/nemo.git#v0.6-beta",
+  "nemo": "^0.2.0",
   "nemo-drivex": "^0.1.0",
-  "nemo-view": "git://github.com/paypal/nemo-view.git#v0.3-beta",
-  "nemo-locatex": "^0.3.0-beta",
-  "nemo-mocha-factory": "git://github.com/paypal/nemo-mocha-factory.git#v0.3-beta"
+  "nemo-view": "^0.2.0",
+  "nemo-locatex": "^0.1.0",
+  "nemo-mocha-factory": "^0.2.0"
 ```
 
 ```bash
@@ -201,7 +201,7 @@ describe("Let's @verifyProfilePage@", function () {
 });
 ```
 
-While this works great when all the tests run in a row, if I only want to add and verify a credit card, I cannot simply run the two tests which add/verify. First, they require a previous test (@displayCreditCards@) and second, the verify test relies upon the add test. 
+While this works great when all the tests run in a row, if I only want to add and verify a credit card, I cannot simply run the two tests which add/verify. First, they require a previous test (@displayCreditCards@) and second, the verify test relies upon the add test.
 
 If I am a developer working on the add card feature, I now have to run this entire suite file which tests other features I'm not touching. There are more than one way to resolve this. Here is a better approach:
 
@@ -222,11 +222,11 @@ describe("Let's @verifyEntireProfilePage@", function () {
 		//log out
 		nemo.view.login.logout();
 	});
-	
+
 	it("should @verifyAccountProfile@", function (done) {
 		//verify account profile
 	});
-	
+
 	it("should @displayCreditCards@", function (done) {
 		//click a link to unhide credit card feature
 		//verify list of credit cards
