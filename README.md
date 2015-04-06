@@ -23,6 +23,3 @@ Nemo view replaces nemo's built-in "view" functionality with a much cooler inter
 
 Follow the README instructions to get the sample app installed and run Nemo tests.
 
-## Install Nemo from scratch
-
-The best way to explore all the moving parts (in our opinion) is to get your hands dirty. [It won't take long, give it a shot](grunt-mocha.md).
