@@ -1,7 +1,10 @@
 # Upgrade to Nemo 1.0 from previous versions
 
 There are changes to the set of required modules, Nemo constructor, and method of configuration.
-Take the below steps to migrate to 1.0
+Take the below steps to migrate to 1.0.
+
+Please note that slight differences in your codebase may make it necessary to closely analyze the provided samples
+to determine if you need to make some changes for those samples to work for your case.
 
 ## package.json changes
 
