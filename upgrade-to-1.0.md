@@ -30,9 +30,11 @@ https://github.com/paypal/nemo-example-app/blob/master/test/functional/config/co
 
 1. comment out `nemoData` block(s) as those are no longer necessary
 2. add the nemoBaseDir block as: https://github.com/paypal/nemo-example-app/blob/master/tasks/loopmocha.js#L15
-3. make any other override modifications based on the new data/plugins/driver nemo configuration
+3. if any of your loopmocha subtasks require different driver properties (e.g. loopmocha:mysubtask)
+   * add the overrides to `mysubtask.json` and place in the config directory
+   * in the subtask config, set `NODE_ENV: 'mysubtask'`
 
 
 ## remove direct usage of nemo-drivex
 
-TBD
+nemo-drivex functionality is fully replaced by the generic methods of nemo-view. See here: https://github.com/paypal/nemo-view#genericunderbar-methods
