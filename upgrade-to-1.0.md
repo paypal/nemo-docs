@@ -17,8 +17,8 @@ simplified now and doesn't require this abstraction.
 
 ## addition of <basedir>/config/config.json
 
-You can copy what is in the 1.0-develop branch of the nemo-example-app:
-https://github.com/paypal/nemo-example-app/blob/1.0-develop/test/functional/config/config.json
+You can copy config from nemo-example-app:
+https://github.com/paypal/nemo-example-app/blob/master/test/functional/config/config.json
 
 ```javascript
 {
@@ -49,15 +49,17 @@ a 1.0 compatible version of the plugin.
 1. remove references and calls to nemo-mocha-factory
 2. remove any view configuration from the spec file (like nemo view names)
 2. add a local, empty "nemo" variable to your spec file: `var nemo;` or `var nemo = {}`
-3. In place of your nemo-mocha-factory call, add this: https://github.com/paypal/nemo-example-app/blob/1.0-develop/test/functional/spec/generic-spec.js#L6-L11
+3. In place of your nemo-mocha-factory call, add this: https://github.com/paypal/nemo-example-app/blob/master/test/functional/spec/generic-spec.js#L6-L11
 
 ## changes to loopmocha file
 
 1. comment out `nemoData` block(s) as those are no longer necessary
-2. add the nemoBaseDir block as: https://github.com/paypal/nemo-example-app/blob/1.0-develop/tasks/loopmocha.js#L15
-3. make any other override modifications based on the new data/plugins/driver nemo configuration
+2. add the nemoBaseDir block as: https://github.com/paypal/nemo-example-app/blob/master/tasks/loopmocha.js#L15
+3. if any of your loopmocha subtasks require different driver properties (e.g. loopmocha:mysubtask)
+   * add the overrides to `mysubtask.json` and place in the config directory
+   * in the subtask config, set `NODE_ENV: 'mysubtask'`
 
 
 ## remove direct usage of nemo-drivex
 
-TBD
+nemo-drivex functionality is fully replaced by the generic methods of nemo-view. See here: https://github.com/paypal/nemo-view#genericunderbar-methods
