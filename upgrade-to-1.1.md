@@ -1,7 +1,8 @@
 # Upgrade to Nemo 1.1
 
-Nemo 1.1 adds selenium-webdriver ~2.46.1 support. Since browser support changes so dramatically between selenium-webdriver 2.44 
-and 2.46.1, it makes sense to release a new minor version to help people make a clean transition when they are ready.
+Nemo 1.1 adds [selenium-webdriver ~2.46.1](https://github.com/SeleniumHQ/selenium/blob/master/javascript/node/selenium-webdriver/CHANGES.md) 
+support. Since browser support changes so dramatically between selenium-webdriver 2.44 and 2.46.1, it makes sense to release a new minor 
+version of nemo to help people make a clean transition when they are ready.
 
 There will be an alpha-testing period while we verify support (see smoke testing section below). While the alpha-testing period 
 commences, you can use the alpha versions listed below to test out the new selenium-webdriver. It is not anticipated that there 
