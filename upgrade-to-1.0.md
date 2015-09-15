@@ -11,18 +11,43 @@ to determine if you need to make some changes for those samples to work for your
 1. nemo and nemo-view to "^1.0.0"
 2. remove nemo-drivex and nemo-locatex from package.json
    * if you are using nemo-drivex directly then refer to below steps to replace those usages
-3. remove nemo-mocha-factory
-4. You "can" update grunt-loop-mocha to "^1.0.0" but not required
+3. remove nemo-mocha-factory. it was an abstraction to hide the complicated constructor lifecycle pre-1.0. The nemo constructor is
+simplified now and doesn't require this abstraction.
+4. You "can" update grunt-loop-mocha to "^1.0.0" but not required. [Please see here for enhanced "parallel" ability in grunt-loop-mocha 1.0](https://github.com/grawk/grunt-loop-mocha#loop-options).
 
 ## addition of <basedir>/config/config.json
 
 You can copy what is in the 1.0-develop branch of the nemo-example-app:
 https://github.com/paypal/nemo-example-app/blob/1.0-develop/test/functional/config/config.json
 
+```javascript
+{
+  "plugins": {
+    "view": {
+      "module": "nemo-view",
+      "arguments": ["path:locator"]
+    }
+  },
+  "driver": {
+    "browser": "firefox"
+  },
+  "data": {
+    "baseUrl": "http://localhost:8000"
+  }
+}
+```
+
+Note how you specify to nemo-view the locator directory. Nemo will scan that directory and create view objects for each JSON file it finds. Read more here:
+https://github.com/paypal/nemo-view/tree/1.0-develop#with-locator-files
+
+**If you are using additional plugins besides nemo-view**, you will have to use the 1.0 version of those. Check the plugins documentation, or bug the author (literally file a bug!), if there isn't
+a 1.0 compatible version of the plugin.
+
+
 ## changes to spec files
 
 1. remove references and calls to nemo-mocha-factory
-2. remove any view configuration from the spec file
+2. remove any view configuration from the spec file (like nemo view names)
 2. add a local, empty "nemo" variable to your spec file: `var nemo;` or `var nemo = {}`
 3. In place of your nemo-mocha-factory call, add this: https://github.com/paypal/nemo-example-app/blob/1.0-develop/test/functional/spec/generic-spec.js#L6-L11
 
