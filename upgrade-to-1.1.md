@@ -1,8 +1,11 @@
 # Upgrade to Nemo 1.1
 
-Nemo 1.1 adds selenium-webdriver ~2.46.1 support. There are only very minor changes to any of the Nemo code, but enough 
-in various modules (besides nemo, like selenium-drivex) that it made sense to release a minor version of nemo and other 
-modules. This should also make it easier for users to stay with previous 2.44 support if necessary.
+Nemo 1.1 adds selenium-webdriver ~2.46.1 support. Since browser support changes so dramatically between selenium-webdriver 2.44 
+and 2.46.1, it makes sense to release a new minor version to help people make a clean transition when they are ready.
+
+There will be an alpha-testing period while we verify support (see smoke testing section below). While the alpha-testing period 
+commences, you can use the alpha versions listed below to test out the new selenium-webdriver. It is not anticipated that there 
+will be drastic (or at all breaking) changes to any nemo API during this alpha period.
 
 ## Alpha testing versions
 
