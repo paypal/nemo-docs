@@ -1,4 +1,8 @@
-# Integration with BrowserStack
+# Integrations
+
+How to combine various testing technologies with nemo
+
+# BrowserStack
 
 You can run your Nemo tests on BrowserStack infrastructure: 
 
