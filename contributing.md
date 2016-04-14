@@ -29,11 +29,9 @@ Once all of these are satisfied, code can be merged.
 The opinion of the author is style is contextual. If you are working in established code, follow the style you find there. 
 Some simple principles to observe:
 
-### Don't be "cute"
+### Code for readability over brevity
 
-This essentially means, don't write terse code for the sake of brevity. Write enough lines of code for the intent of the code to
-be clear. Nobody should have to unwind clever usage of bitwise operators, or figure out that you've used the function signature
-to shortcut the var declaration (cute people know what I'm talking about).
+Write enough lines of code for the intent of the code to be clear. Give objects and variables meaningful names without terse abbreviations. Brief, helpful comments where you believe it could help increase understanding.
 
 ### Object naming
 
