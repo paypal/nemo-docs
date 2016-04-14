@@ -16,3 +16,22 @@ Somewhere to record some frequently asked questions that can't ideally be docume
     }
   }
 ```
+
+## Passing Chrome commandline arguments
+
+*Problem:* You want to pass one or more commandline args to Chrome
+
+*Solution:* Using the `builders` property in the nemo configuration you can pass them as follows:
+
+```js
+"driver": {
+    "builders": {
+      "withCapabilities": [{
+        "browserName": "chrome",
+        "chromeOptions": {
+          "args": ["incognito", "window-size=200,200"]
+        }
+      }]
+    }
+  },
+```
