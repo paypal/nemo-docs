@@ -23,3 +23,7 @@ Nemo view replaces nemo's built-in "view" functionality with a much cooler inter
 
 Follow the README instructions to get the sample app installed and run Nemo tests.
 
+## [Selenium Webdriver Docs](https://seleniumhq.github.io/selenium/docs/api/javascript/index.html)
+
+The [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver) instance is exposed via `nemo.driver`, so it helps to know the API that you have access to.
+
