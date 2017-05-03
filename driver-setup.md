@@ -11,6 +11,17 @@ By far the quickest way to get a test to run locally is by installing phantomjs.
 Mac folks will find that "brew install phantomjs" works quite well to install phantomjs. Just make sure the installation
 is somewhere on your $PATH environment variable.
 
+If SSL certificate is untrusted, phantomjs may timeout loading your application. In such scenarios, you could pass [driver capabilities] (https://github.com/paypal/nemo#servercaps-optional) to nemo like below,
+
+```javascript
+{
+ "driver" : {
+    "browser" : "phantomjs",
+    "serverCaps" : {"phantomjs.cli.args": [ "--ignore-ssl-errors=yes", "--ssl-protocol=tlsv1"]}
+ }
+}
+```
+
 ## Using Firefox
 
 All that is necessary in order to use Firefox is that you've got an appropriate version of the Firefox browser for the
